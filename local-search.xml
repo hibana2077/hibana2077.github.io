@@ -4,6 +4,29 @@
   
   
   <entry>
+    <title>Leetcode-threesum</title>
+    <link href="/post/Leetcode-threesum.html"/>
+    <url>/post/Leetcode-threesum.html</url>
+    
+    <content type="html"><![CDATA[<h2 id="Leetcode-15-3Sum-解題心得"><a href="#Leetcode-15-3Sum-解題心得" class="headerlink" title="Leetcode 15. 3Sum 解題心得"></a>Leetcode 15. 3Sum 解題心得</h2><blockquote><p>題目: <a href="https://leetcode.com/problems/3sum/description/">15. 3Sum</a></p></blockquote><h3 id="題目描述"><a href="#題目描述" class="headerlink" title="題目描述"></a>題目描述</h3><p>給定一組整數陣列 <code>nums</code>，請找出所有不重複的三元組合，使得三元組合的總和為 0。</p><p>大概像這樣：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs text">Given array nums = [-1, 0, 1, 2, -1, -4],<br><br>Answer:<br>[<br>  [-1, 0, 1],<br>  [-1, -1, 2]<br>]<br></code></pre></td></tr></table></figure><h3 id="解題思路"><a href="#解題思路" class="headerlink" title="解題思路"></a>解題思路</h3><p>可以用三個指針，然後分別去指向陣列中的每一個元素，然後再去找剩下的兩個元素，使得三個元素的總和為 0。</p><p>這邊要注意的是，因為題目要求不重複的三元組合，所以我們要先對陣列做排序，這樣才能避免重複的組合。</p><h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">threeSum</span>(<span class="hljs-params">self, nums: <span class="hljs-type">List</span>[<span class="hljs-built_in">int</span>]</span>) -&gt; <span class="hljs-type">List</span>[<span class="hljs-type">List</span>[<span class="hljs-built_in">int</span>]]:<br>        nums.sort()<span class="hljs-comment">#1</span><br>        answer = <span class="hljs-built_in">list</span>()<br>        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(nums) - <span class="hljs-number">2</span>):<span class="hljs-comment">#2</span><br>            <span class="hljs-keyword">if</span> nums[i] &gt; <span class="hljs-number">0</span>:<span class="hljs-keyword">break</span><span class="hljs-comment">#3</span><br>            <span class="hljs-keyword">if</span> i &gt; <span class="hljs-number">0</span> <span class="hljs-keyword">and</span> nums[i] == nums[i-<span class="hljs-number">1</span>]:<span class="hljs-keyword">continue</span><span class="hljs-comment">#4</span><br>            l = i + <span class="hljs-number">1</span><span class="hljs-comment">#5</span><br>            r = <span class="hljs-built_in">len</span>(nums) - <span class="hljs-number">1</span><span class="hljs-comment">#5</span><br>            <span class="hljs-keyword">while</span> l &lt; r:<span class="hljs-comment">#6</span><br>                total = nums[i] + nums[l] + nums[r]<br>                <span class="hljs-keyword">if</span> total &lt; <span class="hljs-number">0</span>:l += <span class="hljs-number">1</span><span class="hljs-comment">#7</span><br>                <span class="hljs-keyword">elif</span> total &gt; <span class="hljs-number">0</span>:r -= <span class="hljs-number">1</span><span class="hljs-comment">#7</span><br>                <span class="hljs-keyword">else</span>:<br>                    triplet = [nums[i], nums[l], nums[r]]<br>                    answer.append(triplet)<br>                    <span class="hljs-keyword">while</span> l &lt; r <span class="hljs-keyword">and</span> nums[l] == triplet[<span class="hljs-number">1</span>]:l += <span class="hljs-number">1</span><span class="hljs-comment">#8</span><br>                    <span class="hljs-keyword">while</span> l &lt; r <span class="hljs-keyword">and</span> nums[r] == triplet[<span class="hljs-number">2</span>]:r -= <span class="hljs-number">1</span><span class="hljs-comment">#8</span><br>        <span class="hljs-keyword">return</span> answer<br></code></pre></td></tr></table></figure><ol><li>先對陣列做排序，這樣才能避免重複的組合，同時也方便 <code>7</code> 與 <code>3</code> 中的判斷。</li><li>這邊的 <code>len(nums) - 2</code> 是因為我們用了3個指標，所以最後兩個元素不用再去找了。</li><li>如果 <code>nums[i] &gt; 0</code>，則代表 <code>nums[i]</code> 之後的元素都會大於 0，所以不可能有三元組合的總和為 0，所以可以直接 <code>break</code>。</li><li>如果 <code>i &gt; 0</code> 且 <code>nums[i] == nums[i-1]</code>，則代表 <code>nums[i]</code> 與 <code>nums[i-1]</code> 重複，所以可以直接 <code>continue</code>，因為不計算重複的組合。</li><li><code>l</code> 與 <code>r</code> 分別指向 <code>nums[i]</code> 之後的第一個元素與最後一個元素。</li><li>當 <code>l &lt; r</code> 時，代表還有元素可以去找。</li><li>如果 <code>total &lt; 0</code>，則代表 <code>nums[l]</code> 需要更大一點，所以 <code>l += 1</code>，反之 <code>r -= 1</code>。</li><li>如果 <code>nums[l]</code> 與 <code>nums[r]</code> 與 <code>triplet</code> 中的元素重複，則代表這個組合已經找過了，所以可以直接 <code>l += 1</code> 與 <code>r -= 1</code>，因為不計算重複的組合。</li></ol>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Leetcode</tag>
+      
+      <tag>Algorithm</tag>
+      
+      <tag>Python</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/post/hello-world.html"/>
     <url>/post/hello-world.html</url>
