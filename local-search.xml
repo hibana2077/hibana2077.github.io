@@ -4,6 +4,29 @@
   
   
   <entry>
+    <title>Leetcode-Remove_Element</title>
+    <link href="/post/Leetcode-Remove-Element.html"/>
+    <url>/post/Leetcode-Remove-Element.html</url>
+    
+    <content type="html"><![CDATA[<h2 id="Leetcode-27-Remove-Element-解題心得"><a href="#Leetcode-27-Remove-Element-解題心得" class="headerlink" title="Leetcode 27. Remove Element 解題心得"></a>Leetcode 27. Remove Element 解題心得</h2><blockquote><p>題目: <a href="https://leetcode.com/problems/remove-element/description/">27. Remove Element</a></p></blockquote><h3 id="題目描述"><a href="#題目描述" class="headerlink" title="題目描述"></a>題目描述</h3><p>給定一組整數陣列 <code>nums</code> 與一個整數 <code>val</code>，請移除陣列中所有等於 <code>val</code> 的元素，並且回傳移除後的陣列長度。</p><p>但是，不可以使用額外的陣列空間，必須在原地操作陣列，可以不考慮順序。</p><p>大概像這樣：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs text">Given nums = [3,2,2,3], val = 3,<br><br>Your function should return length = 2, with the first two elements of nums being 2.<br></code></pre></td></tr></table></figure><h3 id="解題思路"><a href="#解題思路" class="headerlink" title="解題思路"></a>解題思路</h3><p>解法1: 直接遍歷陣列，如果遇到等於 <code>val</code> 的元素，就remove掉。</p><p>解法2: 用list生成式，把不等於 <code>val</code> 的元素重新生成一個新的陣列，再指派給 <code>nums</code>。</p><p>解法3: 類似於解法2，但是是用 <code>filter</code> 來過濾掉等於 <code>val</code> 的元素。</p><h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><p>解法1:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">removeElement</span>(<span class="hljs-params">self, nums: <span class="hljs-type">List</span>[<span class="hljs-built_in">int</span>], val: <span class="hljs-built_in">int</span></span>) -&gt; <span class="hljs-built_in">int</span>:<br>        i = <span class="hljs-number">0</span><br>        <span class="hljs-keyword">while</span> i &lt; <span class="hljs-built_in">len</span>(nums):<br>            <span class="hljs-keyword">if</span> nums[i] == val:<br>                nums.remove(nums[i])<br>            <span class="hljs-keyword">else</span>:<br>                i += <span class="hljs-number">1</span><br>        <span class="hljs-keyword">return</span> <span class="hljs-built_in">len</span>(nums)<br></code></pre></td></tr></table></figure><p>Runtime 39 ms Beats 75.59%<br>Memory 16.1 MB Beats 92.72%</p><p>解法2:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">removeElement</span>(<span class="hljs-params">self, nums: <span class="hljs-type">List</span>[<span class="hljs-built_in">int</span>], val: <span class="hljs-built_in">int</span></span>) -&gt; <span class="hljs-built_in">int</span>:<br>        nums[:] = [x <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> nums <span class="hljs-keyword">if</span> x != val] <span class="hljs-comment"># [:] 代表指派給 nums</span><br>        <span class="hljs-keyword">return</span> <span class="hljs-built_in">len</span>(nums)<br></code></pre></td></tr></table></figure><p>Runtime 44 ms Beats 41.66%<br>Memory 16.1 MB Beats 92.72%</p><p>解法3:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">removeElement</span>(<span class="hljs-params">self, nums: <span class="hljs-type">List</span>[<span class="hljs-built_in">int</span>], val: <span class="hljs-built_in">int</span></span>) -&gt; <span class="hljs-built_in">int</span>:<br>        nums[:] = <span class="hljs-built_in">filter</span>(<span class="hljs-keyword">lambda</span> x: x != val, nums) <span class="hljs-comment"># [:] 代表指派給 nums</span><br>        <span class="hljs-keyword">return</span> <span class="hljs-built_in">len</span>(nums)<br></code></pre></td></tr></table></figure><p>Runtime 39 ms Beats 75.59%<br>Memory 16.3 MB Beats 31.73%</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Leetcode</tag>
+      
+      <tag>Algorithm</tag>
+      
+      <tag>Python</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Leetcode-threesum</title>
     <link href="/post/Leetcode-threesum.html"/>
     <url>/post/Leetcode-threesum.html</url>

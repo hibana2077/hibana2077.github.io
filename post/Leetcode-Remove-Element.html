@@ -16,15 +16,15 @@
   <meta name="author" content="hibana2077">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Leetcode 15. 3Sum 解題心得 題目: 15. 3Sum  題目描述給定一組整數陣列 nums，請找出所有不重複的三元組合，使得三元組合的總和為 0。 大概像這樣： 1234567Given array nums &#x3D; [-1, 0, 1, 2, -1, -4],Answer:[  [-1, 0, 1],  [-1, -1, 2]]  解題思路可以用三個指針，然後分別去指向陣列中的每一">
+    <meta name="description" content="Leetcode 27. Remove Element 解題心得 題目: 27. Remove Element  題目描述給定一組整數陣列 nums 與一個整數 val，請移除陣列中所有等於 val 的元素，並且回傳移除後的陣列長度。 但是，不可以使用額外的陣列空間，必須在原地操作陣列，可以不考慮順序。 大概像這樣： 123Given nums &#x3D; [3,2,2,3], val &#x3D; 3,Your">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Leetcode-threesum">
-<meta property="og:url" content="https://hibana2077.github.io/post/Leetcode-threesum.html">
+<meta property="og:title" content="Leetcode-Remove_Element">
+<meta property="og:url" content="https://hibana2077.github.io/post/Leetcode-Remove-Element.html">
 <meta property="og:site_name" content="hibana2077&#39;s blog">
-<meta property="og:description" content="Leetcode 15. 3Sum 解題心得 題目: 15. 3Sum  題目描述給定一組整數陣列 nums，請找出所有不重複的三元組合，使得三元組合的總和為 0。 大概像這樣： 1234567Given array nums &#x3D; [-1, 0, 1, 2, -1, -4],Answer:[  [-1, 0, 1],  [-1, -1, 2]]  解題思路可以用三個指針，然後分別去指向陣列中的每一">
+<meta property="og:description" content="Leetcode 27. Remove Element 解題心得 題目: 27. Remove Element  題目描述給定一組整數陣列 nums 與一個整數 val，請移除陣列中所有等於 val 的元素，並且回傳移除後的陣列長度。 但是，不可以使用額外的陣列空間，必須在原地操作陣列，可以不考慮順序。 大概像這樣： 123Given nums &#x3D; [3,2,2,3], val &#x3D; 3,Your">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-09-13T22:44:41.000Z">
-<meta property="article:modified_time" content="2023-09-14T00:58:09.616Z">
+<meta property="article:published_time" content="2023-09-14T23:45:03.000Z">
+<meta property="article:modified_time" content="2023-09-15T01:00:26.349Z">
 <meta property="article:author" content="hibana2077">
 <meta property="article:tag" content="Leetcode">
 <meta property="article:tag" content="Algorithm">
@@ -33,7 +33,7 @@
   
   
   
-  <title>Leetcode-threesum - hibana2077&#39;s blog</title>
+  <title>Leetcode-Remove_Element - hibana2077&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -199,7 +199,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Leetcode-threesum"></span>
+            <span id="subtitle" data-typed-text="Leetcode-Remove_Element"></span>
           
         </div>
 
@@ -210,8 +210,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-09-14 07:44" pubdate>
-          September 14, 2023 am
+        <time datetime="2023-09-15 08:45" pubdate>
+          September 15, 2023 am
         </time>
       </span>
     
@@ -222,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.1k words
+          929 words
         
       </span>
     
@@ -233,7 +233,7 @@
         
         
         
-          10 mins
+          8 mins
         
       </span>
     
@@ -270,32 +270,34 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Leetcode-threesum</h1>
+            <h1 id="seo-header">Leetcode-Remove_Element</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="Leetcode-15-3Sum-解題心得"><a href="#Leetcode-15-3Sum-解題心得" class="headerlink" title="Leetcode 15. 3Sum 解題心得"></a>Leetcode 15. 3Sum 解題心得</h2><blockquote>
-<p>題目: <a target="_blank" rel="noopener" href="https://leetcode.com/problems/3sum/description/">15. 3Sum</a></p>
+                <h2 id="Leetcode-27-Remove-Element-解題心得"><a href="#Leetcode-27-Remove-Element-解題心得" class="headerlink" title="Leetcode 27. Remove Element 解題心得"></a>Leetcode 27. Remove Element 解題心得</h2><blockquote>
+<p>題目: <a target="_blank" rel="noopener" href="https://leetcode.com/problems/remove-element/description/">27. Remove Element</a></p>
 </blockquote>
-<h3 id="題目描述"><a href="#題目描述" class="headerlink" title="題目描述"></a>題目描述</h3><p>給定一組整數陣列 <code>nums</code>，請找出所有不重複的三元組合，使得三元組合的總和為 0。</p>
+<h3 id="題目描述"><a href="#題目描述" class="headerlink" title="題目描述"></a>題目描述</h3><p>給定一組整數陣列 <code>nums</code> 與一個整數 <code>val</code>，請移除陣列中所有等於 <code>val</code> 的元素，並且回傳移除後的陣列長度。</p>
+<p>但是，不可以使用額外的陣列空間，必須在原地操作陣列，可以不考慮順序。</p>
 <p>大概像這樣：</p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs text">Given array nums = [-1, 0, 1, 2, -1, -4],<br><br>Answer:<br>[<br>  [-1, 0, 1],<br>  [-1, -1, 2]<br>]<br></code></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs text">Given nums = [3,2,2,3], val = 3,<br><br>Your function should return length = 2, with the first two elements of nums being 2.<br></code></pre></td></tr></table></figure>
 
-<h3 id="解題思路"><a href="#解題思路" class="headerlink" title="解題思路"></a>解題思路</h3><p>可以用三個指針，然後分別去指向陣列中的每一個元素，然後再去找剩下的兩個元素，使得三個元素的總和為 0。</p>
-<p>這邊要注意的是，因為題目要求不重複的三元組合，所以我們要先對陣列做排序，這樣才能避免重複的組合。</p>
-<h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">threeSum</span>(<span class="hljs-params">self, nums: <span class="hljs-type">List</span>[<span class="hljs-built_in">int</span>]</span>) -&gt; <span class="hljs-type">List</span>[<span class="hljs-type">List</span>[<span class="hljs-built_in">int</span>]]:<br>        nums.sort()<span class="hljs-comment">#1</span><br>        answer = <span class="hljs-built_in">list</span>()<br>        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(nums) - <span class="hljs-number">2</span>):<span class="hljs-comment">#2</span><br>            <span class="hljs-keyword">if</span> nums[i] &gt; <span class="hljs-number">0</span>:<span class="hljs-keyword">break</span><span class="hljs-comment">#3</span><br>            <span class="hljs-keyword">if</span> i &gt; <span class="hljs-number">0</span> <span class="hljs-keyword">and</span> nums[i] == nums[i-<span class="hljs-number">1</span>]:<span class="hljs-keyword">continue</span><span class="hljs-comment">#4</span><br>            l = i + <span class="hljs-number">1</span><span class="hljs-comment">#5</span><br>            r = <span class="hljs-built_in">len</span>(nums) - <span class="hljs-number">1</span><span class="hljs-comment">#5</span><br>            <span class="hljs-keyword">while</span> l &lt; r:<span class="hljs-comment">#6</span><br>                total = nums[i] + nums[l] + nums[r]<br>                <span class="hljs-keyword">if</span> total &lt; <span class="hljs-number">0</span>:l += <span class="hljs-number">1</span><span class="hljs-comment">#7</span><br>                <span class="hljs-keyword">elif</span> total &gt; <span class="hljs-number">0</span>:r -= <span class="hljs-number">1</span><span class="hljs-comment">#7</span><br>                <span class="hljs-keyword">else</span>:<br>                    triplet = [nums[i], nums[l], nums[r]]<br>                    answer.append(triplet)<br>                    <span class="hljs-keyword">while</span> l &lt; r <span class="hljs-keyword">and</span> nums[l] == triplet[<span class="hljs-number">1</span>]:l += <span class="hljs-number">1</span><span class="hljs-comment">#8</span><br>                    <span class="hljs-keyword">while</span> l &lt; r <span class="hljs-keyword">and</span> nums[r] == triplet[<span class="hljs-number">2</span>]:r -= <span class="hljs-number">1</span><span class="hljs-comment">#8</span><br>        <span class="hljs-keyword">return</span> answer<br></code></pre></td></tr></table></figure>
+<h3 id="解題思路"><a href="#解題思路" class="headerlink" title="解題思路"></a>解題思路</h3><p>解法1: 直接遍歷陣列，如果遇到等於 <code>val</code> 的元素，就remove掉。</p>
+<p>解法2: 用list生成式，把不等於 <code>val</code> 的元素重新生成一個新的陣列，再指派給 <code>nums</code>。</p>
+<p>解法3: 類似於解法2，但是是用 <code>filter</code> 來過濾掉等於 <code>val</code> 的元素。</p>
+<h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><p>解法1:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">removeElement</span>(<span class="hljs-params">self, nums: <span class="hljs-type">List</span>[<span class="hljs-built_in">int</span>], val: <span class="hljs-built_in">int</span></span>) -&gt; <span class="hljs-built_in">int</span>:<br>        i = <span class="hljs-number">0</span><br>        <span class="hljs-keyword">while</span> i &lt; <span class="hljs-built_in">len</span>(nums):<br>            <span class="hljs-keyword">if</span> nums[i] == val:<br>                nums.remove(nums[i])<br>            <span class="hljs-keyword">else</span>:<br>                i += <span class="hljs-number">1</span><br>        <span class="hljs-keyword">return</span> <span class="hljs-built_in">len</span>(nums)<br></code></pre></td></tr></table></figure>
 
-<ol>
-<li>先對陣列做排序，這樣才能避免重複的組合，同時也方便 <code>7</code> 與 <code>3</code> 中的判斷。</li>
-<li>這邊的 <code>len(nums) - 2</code> 是因為我們用了3個指標，所以最後兩個元素不用再去找了。</li>
-<li>如果 <code>nums[i] &gt; 0</code>，則代表 <code>nums[i]</code> 之後的元素都會大於 0，所以不可能有三元組合的總和為 0，所以可以直接 <code>break</code>。</li>
-<li>如果 <code>i &gt; 0</code> 且 <code>nums[i] == nums[i-1]</code>，則代表 <code>nums[i]</code> 與 <code>nums[i-1]</code> 重複，所以可以直接 <code>continue</code>，因為不計算重複的組合。</li>
-<li><code>l</code> 與 <code>r</code> 分別指向 <code>nums[i]</code> 之後的第一個元素與最後一個元素。</li>
-<li>當 <code>l &lt; r</code> 時，代表還有元素可以去找。</li>
-<li>如果 <code>total &lt; 0</code>，則代表 <code>nums[l]</code> 需要更大一點，所以 <code>l += 1</code>，反之 <code>r -= 1</code>。</li>
-<li>如果 <code>nums[l]</code> 與 <code>nums[r]</code> 與 <code>triplet</code> 中的元素重複，則代表這個組合已經找過了，所以可以直接 <code>l += 1</code> 與 <code>r -= 1</code>，因為不計算重複的組合。</li>
-</ol>
+<p>Runtime 39 ms Beats 75.59%<br>Memory 16.1 MB Beats 92.72%</p>
+<p>解法2:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">removeElement</span>(<span class="hljs-params">self, nums: <span class="hljs-type">List</span>[<span class="hljs-built_in">int</span>], val: <span class="hljs-built_in">int</span></span>) -&gt; <span class="hljs-built_in">int</span>:<br>        nums[:] = [x <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> nums <span class="hljs-keyword">if</span> x != val] <span class="hljs-comment"># [:] 代表指派給 nums</span><br>        <span class="hljs-keyword">return</span> <span class="hljs-built_in">len</span>(nums)<br></code></pre></td></tr></table></figure>
+
+<p>Runtime 44 ms Beats 41.66%<br>Memory 16.1 MB Beats 92.72%</p>
+<p>解法3:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">removeElement</span>(<span class="hljs-params">self, nums: <span class="hljs-type">List</span>[<span class="hljs-built_in">int</span>], val: <span class="hljs-built_in">int</span></span>) -&gt; <span class="hljs-built_in">int</span>:<br>        nums[:] = <span class="hljs-built_in">filter</span>(<span class="hljs-keyword">lambda</span> x: x != val, nums) <span class="hljs-comment"># [:] 代表指派給 nums</span><br>        <span class="hljs-keyword">return</span> <span class="hljs-built_in">len</span>(nums)<br></code></pre></td></tr></table></figure>
+
+<p>Runtime 39 ms Beats 75.59%<br>Memory 16.3 MB Beats 31.73%</p>
 
                 
               </div>
@@ -324,8 +326,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Leetcode-threesum</div>
-      <div>https://hibana2077.github.io/post/Leetcode-threesum.html</div>
+      <div>Leetcode-Remove_Element</div>
+      <div>https://hibana2077.github.io/post/Leetcode-Remove-Element.html</div>
     </div>
     <div class="license-meta">
       
@@ -337,7 +339,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>September 14, 2023</div>
+          <div>September 15, 2023</div>
         </div>
       
       
@@ -375,18 +377,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/post/Leetcode-Remove-Element.html" title="Leetcode-Remove_Element">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Leetcode-Remove_Element</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/post/hello-world.html" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/post/Leetcode-threesum.html" title="Leetcode-threesum">
+                        <span class="hidden-mobile">Leetcode-threesum</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
