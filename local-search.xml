@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>Leetcode-Remove-Duplicates-from-Sorted-Array</title>
+    <link href="/post/Leetcode-Remove-Duplicates-from-Sorted-Array.html"/>
+    <url>/post/Leetcode-Remove-Duplicates-from-Sorted-Array.html</url>
+    
+    <content type="html"><![CDATA[<h2 id="Leetcode-26-Remove-Duplicates-from-Sorted-Array-解題心得"><a href="#Leetcode-26-Remove-Duplicates-from-Sorted-Array-解題心得" class="headerlink" title="Leetcode 26. Remove Duplicates from Sorted Array 解題心得"></a>Leetcode 26. Remove Duplicates from Sorted Array 解題心得</h2><blockquote><p>題目: <a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/">26. Remove Duplicates from Sorted Array</a></p></blockquote><h3 id="題目描述"><a href="#題目描述" class="headerlink" title="題目描述"></a>題目描述</h3><p>給定一組已排序的整數陣列 <code>nums</code>，請移除陣列中所有重複的元素，並且回傳移除後的陣列長度。<br>同時不可以使用額外的陣列空間，必須在原地操作陣列，需要考慮到陣列的順序。</p><p>大概像這樣：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs text">Given nums = [1,1,2],<br>Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively.<br>return nums = [1,2,_]<br></code></pre></td></tr></table></figure><h3 id="解題思路"><a href="#解題思路" class="headerlink" title="解題思路"></a>解題思路</h3><p>用 <code>python</code> 的話，可以用 <code>set</code> 來過濾掉重複的元素，再把 <code>set</code> 後的結果指派給 <code>nums</code>。<br>然後再sort一次，就可以得到答案了。</p><h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">removeDuplicates</span>(<span class="hljs-params">self, nums: <span class="hljs-type">List</span>[<span class="hljs-built_in">int</span>]</span>) -&gt; <span class="hljs-built_in">int</span>:<br>        nums[:] = <span class="hljs-built_in">sorted</span>(<span class="hljs-built_in">set</span>(nums))<br>        <span class="hljs-keyword">return</span> <span class="hljs-built_in">len</span>(nums)<br></code></pre></td></tr></table></figure><p>Runtime 76 ms Beats 94.12%</p><p>Memory 17.4 MB Beats 99.93%</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Leetcode-Remove_Element</title>
     <link href="/post/Leetcode-Remove-Element.html"/>
     <url>/post/Leetcode-Remove-Element.html</url>
