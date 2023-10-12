@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>EC2-website</title>
+    <link href="/post/EC2-website.html"/>
+    <url>/post/EC2-website.html</url>
+    
+    <content type="html"><![CDATA[<h1 id="AWS-EC2-和-Docker-網站部署筆記"><a href="#AWS-EC2-和-Docker-網站部署筆記" class="headerlink" title="AWS EC2 和 Docker 網站部署筆記"></a>AWS EC2 和 Docker 網站部署筆記</h1><p>這篇筆記將指導您如何在 AWS EC2 上固定 IP 地址，以及如何將您的網頁打包成 Docker 鏡像並在 EC2 上部署。</p><h2 id="固定-EC2-IP-地址"><a href="#固定-EC2-IP-地址" class="headerlink" title="固定 EC2 IP 地址"></a>固定 EC2 IP 地址</h2><ol><li><strong>登入 AWS 管理控制台</strong></li><li><strong>選擇「EC2」服務</strong></li><li><strong>在左側導航欄，點擊「彈性 IP」</strong></li><li><strong>點擊「分配新地址」並完成操作</strong></li><li><strong>選擇新建的彈性 IP，點擊「操作」-&gt;「關聯 IP 地址」</strong></li><li><strong>選擇要關聯的 EC2 實例和網卡，然後點擊「關聯」</strong></li></ol><blockquote><p>注意：固定 IP 地址（彈性 IP）可能會產生額外費用，如果不需要請記得釋放。</p></blockquote><h2 id="打包網頁為-Docker-鏡像並部署到-EC2"><a href="#打包網頁為-Docker-鏡像並部署到-EC2" class="headerlink" title="打包網頁為 Docker 鏡像並部署到 EC2"></a>打包網頁為 Docker 鏡像並部署到 EC2</h2><h3 id="在本地機器："><a href="#在本地機器：" class="headerlink" title="在本地機器："></a>在本地機器：</h3><ol><li><p><strong>創建 Dockerfile</strong></p><ul><li>在 <code>/public</code> 的同一層目錄建立一個名為 <code>Dockerfile</code> 的檔案。</li><li>內容如下：</li></ul> <figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs Dockerfile"><span class="hljs-keyword">FROM</span> nginx:alpine<br><span class="hljs-keyword">COPY</span><span class="language-bash"> ./public /usr/share/nginx/html</span><br></code></pre></td></tr></table></figure></li><li><p><strong>建立 Docker 鏡像</strong></p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker build -t your-image-name .<br></code></pre></td></tr></table></figure></li><li><p><strong>（可選）推送到 Docker 儲存庫</strong></p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker push your-image-name<br></code></pre></td></tr></table></figure></li></ol><h3 id="在-AWS-EC2："><a href="#在-AWS-EC2：" class="headerlink" title="在 AWS EC2："></a>在 AWS EC2：</h3><ol><li><p><strong>安裝 Docker</strong></p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo apt update<br>sudo apt install docker.io<br>sudo systemctl start docker<br>sudo systemctl <span class="hljs-built_in">enable</span> docker<br></code></pre></td></tr></table></figure></li><li><p><strong>拉取 Docker 鏡像</strong></p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker pull your-image-name<br></code></pre></td></tr></table></figure></li><li><p><strong>運行 Docker 容器</strong></p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker run -d -p 80:80 your-image-name<br></code></pre></td></tr></table></figure></li></ol><p>這樣，您就可以透過 EC2 實例的公共 IP 地址（或彈性 IP）訪問您的網站了。</p><p>以上就是關於如何在 AWS EC2 上固定 IP 以及如何將網頁打包成 Docker 鏡像並部署的基本步驟。希望這篇筆記能夠幫助您！有其他問題歡迎再提出。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>AWS</tag>
+      
+      <tag>EC2</tag>
+      
+      <tag>Docker</tag>
+      
+      <tag>Cloud</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Leetcode-Find-the-Pivot-Integer</title>
     <link href="/post/Leetcode-Find-the-Pivot-Integer.html"/>
     <url>/post/Leetcode-Find-the-Pivot-Integer.html</url>
