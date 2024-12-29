@@ -17,20 +17,22 @@ Education
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+<!-- 醫療數據分析應用開發實習生-金融醫療(數數發中心, DDT) -->
+<!-- * Medical Data Analysis Application Development Intern: 02/2025 - 07/2025
+  * Cathay Holdings -->
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Digital TA System Development: Spring 2024 and Fall 2024
+  * National Taitung University
+  * Duties included: Developing a digital TA system for the department
+
+* Data Structure Teaching Assistant: Spring 2023
+  * National Taitung University
+  * Duties included: Domjudge server maintenance, grading, and tutoring
+
+* Algo Teaching Assistant: Fall 2023
+  * National Taitung University
+  * Duties included: Domjudge server maintenance, grading, and tutoring
   
 Skills
 ======
