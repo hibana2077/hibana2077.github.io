@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Syuan Hao / hibana2077"
 title_separator          : "-"
 name                     : &name "Syuan Hao, Li"
-description              : &description "University student"
+description              : &description ""
 url                      : https://hibana2077.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "hibana2077/hibana2077.github.io"
@@ -22,21 +22,21 @@ repository               : "hibana2077/hibana2077.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Syuan Hao, Li"
   pronouns         : "He/Him"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "University student"
   location         : "Taiwan"
-  employer         : "Red Brick University"
+  employer         : # ""
   uri              : # URL
   email            : "hibana2077@gmail.com" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : # "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : "http://orcid.org/0009-0008-8300-8345"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
   scopus           : # URL
 
