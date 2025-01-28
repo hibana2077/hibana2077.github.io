@@ -19,8 +19,8 @@ Work experience
 ======
 
 <!-- 醫療數據分析應用開發實習生-金融醫療(數數發中心, DDT) -->
-<!-- * Medical Data Analysis Application Development Intern: 02/2025 - 07/2025
-  * Cathay Holdings -->
+* Medical Data Analysis Application Development Intern: 02/2025 - 07/2025
+  * Cathay Holdings
 
 * Digital TA System Development: Spring 2024 and Fall 2024
   * National Taitung University
