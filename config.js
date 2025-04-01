@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '',
+  pathPrefix: '/static',
   siteUrl: 'https://hibana2077.github.io',
   title: 'Syuan-Hao Li',
   description: 'Personal Website of Syuan-Hao Li',
