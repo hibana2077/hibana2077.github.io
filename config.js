@@ -21,7 +21,7 @@ module.exports = {
 		research: 'research',
 	},
 	professions: [
-		'Uncertainty Quantification'
+		'Graduate Student',
 	],
 	introduction: [
 		'I am a B.Sc. student in Computer Science at National Taitung University, Taiwan.'
