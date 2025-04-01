@@ -37,8 +37,17 @@ module.exports = {
       url: 'https://github.com/hibana2077',
       icon: ['fab', 'github'],
     }, {
-      url: 'https://scholar.google.com/',
-      icon: ['fab', 'google-scholar'],
+      url: 'http://orcid.org/0009-0008-8300-8345',
+      icon: ['fab', 'orcid'],
+    }, {
+      url: 'https://www.linkedin.com/in/syuan-hao-li-92a860225/',
+      icon: ['fab', 'linkedin'],
+    }, {
+      url: 'https://www.researchgate.net/profile/Syuan-Hao-Li',
+      icon: ['fab', 'researchgate'],
+    }, {
+      url: 'https://www.kaggle.com/hibana2077',
+      icon: ['fab', 'kaggle'],
     },
   ],
   // facebook: 'https://www.facebook.com/rolwin.monteiro',
