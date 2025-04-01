@@ -94,24 +94,35 @@ module.exports = {
       position: 'left',
       data: [
         {
-          date: 'Sep 2022 - Jun 2023',
-          title: 'Algorithm & Data Structure Teaching Assistant',
+          date: 'Sep 2023 - Jan 2024',
+          title: 'Learning effect evaluation tool development',
           location: 'National Taitung University',
-          description: 'Maintained the Domjudge online judge system and assisted students in solving problems.',
+          description: 'Using Chatbot to quickly evaluate the learning effect of students in the classroom.',
         },
+        {
+          date: 'Feb 2024 - Jan 2025',
+          title: 'Digital TA development',
+          location: 'National Taitung University',
+          description: 'Applying RAG and LLM to develop a digital TA for students.',
+        },
+        {
+          date: 'Feb 2025 - Jun 2025',
+          title: 'Cathay Holdings DDT Medical Data Analysis Intern',
+          location: 'Cathay Holdings, Taipei, Taiwan',
+        }
       ],
     }, {
       title: 'Teaching',
       position: 'right',
       data: [
         {
-          date: 'Aug 2019',
-          title: 'Teaching Assistant of XXX',
-          location: 'Somewhere',
+          date: 'Jun 2023',
+          title: 'Teaching Assistant of Data Structure',
+          location: 'National Taitung University',
         }, {
-          date: 'Aug 2018',
-          title: 'Teaching Assistant of XXX',
-          location: 'Somewhere',
+          date: 'Sep 2022',
+          title: 'Teaching Assistant of Algorithm',
+          location: 'National Taitung University',
         }, {
           date: 'Aug 2017',
           title: 'Teaching Assistant of XXX',
