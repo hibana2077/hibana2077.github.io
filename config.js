@@ -106,6 +106,12 @@ module.exports = {
           description: 'Applying RAG and LLM to develop a digital TA for students.',
         },
         {
+          date: 'Sep 2024 - Feb 2025',
+          title: 'National Science and Technology Council project assistant',
+          location: 'National Taitung University',
+          description: 'Maintaining the website of the project and assisting in the development of the project.',
+        },
+        {
           date: 'Feb 2025 - Jun 2025',
           title: 'Cathay Holdings DDT Medical Data Analysis Intern',
           location: 'Cathay Holdings, Taipei, Taiwan',
@@ -123,19 +129,7 @@ module.exports = {
           date: 'Sep 2022',
           title: 'Teaching Assistant of Algorithm',
           location: 'National Taitung University',
-        }, {
-          date: 'Aug 2017',
-          title: 'Teaching Assistant of XXX',
-          location: 'Somewhere',
-        }, {
-          date: 'Aug 2018',
-          title: 'Teaching Assistant of XXX',
-          location: 'Somewhere',
-        }, {
-          date: 'Aug 2017',
-          title: 'Teaching Assistant of XXX',
-          location: 'Somewhere',
-        },
+        }
       ],
     }, {
       title: 'Volunteer',
