@@ -44,20 +44,10 @@ module.exports = {
 	],
 	education: [
 		{
-			date: 'Aug. 2023 - Present',
+			date: 'Sep. 2021 - May. 2025',
 			icon: 'university',
-			title: 'Ph.D. in Information Science | minor in Statistics',
-			location: 'University of Illinois Urbana-Champaign',
-		}, {
-			date: 'Sep. 2021 - Apr. 2023',
-			icon: 'university',
-			title: 'B.Sc. in Computer Science | minor in Mathematics',
-			location: 'University of Michigan',
-		}, {
-			date: 'Sep. 2019 - Aug. 2023',
-			icon: 'university',
-			title: 'B.Eng. in Electrical and Computer Engineering | minor in Computer Science',
-			location: 'Shanghai Jiao Tong University',
+			title: 'B.Sc. in Computer Science',
+			location: 'National Taitung University',
 		}
 	],
 	social: [
