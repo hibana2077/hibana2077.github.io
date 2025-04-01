@@ -26,7 +26,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Cache node modules
-        uses: actions/cache@v3
+        uses: actions/cache@v2
         env:
           cache-name: cache-node-modules
         with:
@@ -37,15 +37,16 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
+
       - run: npm i -g yarn
       - run: yarn
-      - run: yarn build
+      - run: yarn workspace example build
       - name: Deploy to GitHub Pages
         if: success() && github.ref == 'refs/heads/master'
         uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
-          build_dir: public
+          build_dir: example/public
           keep_history: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
