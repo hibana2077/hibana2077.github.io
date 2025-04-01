@@ -1,10 +1,10 @@
 module.exports = {
   pathPrefix: '/gatsby-theme-academic',
   siteUrl: 'https://tc-imba.github.io',
-  title: 'Syuan-Hao Li',
+  title: 'Syuan-Hao Li(Tom)',
   description: 'Personal Website of John Doe',
-  author: 'John Doe',
-  authorAlternative: '豆浆',
+  author: 'Syuan-Hao Li',
+  authorAlternative: 'Tom',
   introduction: [
     'You can write one or several paragraphs to introduce yourself here. You can find this introduction in the `config.js` file in the template.',
     'In this site, almost everything supports Markdown Syntax. For example, you can add hyperlinks in the introduction such as [fxhsb](https://github.com/Reapor-Yurnero) with\n```markdown\n[fxhsb](https://github.com/Reapor-Yurnero)\n```',
