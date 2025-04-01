@@ -73,16 +73,21 @@ module.exports = {
     }],
   interests: [
     {
-      icon: 'cubes',
-      title: 'Distributed Systems',
+      title: 'Medical Image Processing',
+      icon: 'stethoscope',
     }, {
       icon: 'layer-group',
       title: 'Full Stack Development',
     }, {
       icon: ['fab', 'linux'],
-      // icon: 'linux',
       title: 'Open Source Community',
-    }],
+    }, {
+			icon: 'chart-line',
+			title: 'Mathematical Statistics',
+		}, {
+			icon: 'brain',
+			title: 'Learning Theory',
+		}],
   experience: [
     {
       title: 'Work',
