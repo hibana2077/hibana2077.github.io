@@ -6,7 +6,7 @@ module.exports = {
   author: 'Syuan-Hao Li',
   authorAlternative: 'Tom',
   introduction: [
-    'I am a B.Sc. student in Computer Science at National Taitung University, Taiwan.'
+    'I am a final year B.Sc. student in Computer Science at National Taitung University, Taiwan.'
   ],
   avatar: 'https://avatars.githubusercontent.com/u/72302793?size=128',
   professions: [
@@ -90,14 +90,14 @@ module.exports = {
 		}],
   experience: [
     {
-      title: 'Work',
+      title: 'Work Experience',
       position: 'left',
       data: [
         {
-          date: 'Aug 2019 - Present',
-          title: 'Software Engineer',
-          location: 'Somewhere',
-          description: 'description',
+          date: 'Sep 2022 - Jun 2023',
+          title: 'Algorithm & Data Structure Teaching Assistant',
+          location: 'National Taitung University',
+          description: 'Maintained the Domjudge online judge system and assisted students in solving problems.',
         },
       ],
     }, {
