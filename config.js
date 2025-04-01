@@ -21,10 +21,10 @@ module.exports = {
 		research: 'research',
 	},
 	professions: [
-		'Uncertainty Quantification',
+		'Uncertainty Quantification'
 	],
 	introduction: [
-		'I am a B.Sc. student in Computer Science at National Taitung University, Taiwan.',
+		'I am a B.Sc. student in Computer Science at National Taitung University, Taiwan.'
 	],
 	education: [
 		{
@@ -55,21 +55,6 @@ module.exports = {
 		}, {
 			icon: 'brain',
 			title: 'Learning Theory',
-		}, {
-			icon: 'chart-network',
-			title: 'Graph Theory',
-		}, {
-			icon: `laptop-code`,
-			title: `Algorithmic Design`,
-		}, {
-			icon: `hands-usd`,
-			title: `Game Theory`,
-		}, {
-			icon: 'shapes',
-			title: 'Geometry \& Topology',
-		}, {
-			icon: 'function',
-			title: 'Mathematical Analysis',
 		}
 	],
 	experience: [
