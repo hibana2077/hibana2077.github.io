@@ -165,13 +165,13 @@
   Cache-Control: public, max-age=31536000, immutable
 /75fc9c18-5dcc37c891eb6516dff6.js.LICENSE.txt
   Cache-Control: public, max-age=31536000, immutable
-/app-4f2b7fcae6fc41912996.js.LICENSE.txt
+/app-bd111e667903bff4936a.js.LICENSE.txt
   Cache-Control: public, max-age=31536000, immutable
 /framework-9d64444b2dc5e6e53c1d.js.LICENSE.txt
   Cache-Control: public, max-age=31536000, immutable
-/app-4f2b7fcae6fc41912996.js
+/app-bd111e667903bff4936a.js
   Cache-Control: public, max-age=31536000, immutable
-/webpack-runtime-274029dd46ee1e75f6d6.js
+/webpack-runtime-da9f94761d1bb8e8b40f.js
   Cache-Control: public, max-age=31536000, immutable
 /777-32ec8c166c2b1f300f15.js
   Cache-Control: public, max-age=31536000, immutable
@@ -205,12 +205,6 @@
   Cache-Control: public, max-age=31536000, immutable
 /component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-research-diretide-index-md-24850edb0fbe5895fa7c.js
   Cache-Control: public, max-age=31536000, immutable
-/component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-research-fxhsb-1-index-md-f87825a648fb50769e41.js
-  Cache-Control: public, max-age=31536000, immutable
-/component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-research-fxhsb-2-index-md-a7302aa71d9ed17d48a6.js
-  Cache-Control: public, max-age=31536000, immutable
-/component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-research-fxhsb-3-index-md-1a5a3c809911c0a902ee.js
-  Cache-Control: public, max-age=31536000, immutable
 /component---node-modules-gatsby-theme-academic-src-templates-tags-index-jsx-f252e15fc7d885fcc8f3.js
   Cache-Control: public, max-age=31536000, immutable
 /component---node-modules-gatsby-theme-academic-src-templates-tags-index-jsx-content-file-path-content-tags-gatsby-index-md-54b70f2b0231bc77b7db.js
@@ -233,23 +227,23 @@
   Cache-Control: public, max-age=31536000, immutable
 /0eb9e45f-fcabbabf95e780074d6f.js
   Cache-Control: public, max-age=31536000, immutable
-/5a24f48164172f2547a24d36e00378cbfb515677-142c683a8d7d363e5fe0.js
+/d70f3b46f1ed5c64c149e8c0bad7d5d17cd4b54e-c77a1800454e06e6511b.js
   Cache-Control: public, max-age=31536000, immutable
-/539f6d4c4b0735293909ab20f611759ddd4f645a-75b25551715b3900f2d9.js
+/791b6bc339ee4e1d48fd14795a61a2185a08c225-29cd16703abd3e1da452.js
   Cache-Control: public, max-age=31536000, immutable
-/40042b859e741802f1a1d617dffd8d060b6e2f91-9325192ac8a07e530ea5.js
-  Cache-Control: public, max-age=31536000, immutable
-/31d2d49400a3f08e45267fc2a287feb93fe0530c-f8adad4beab4bf0c7bcd.js
+/e84a75e0c96863ddd3ff0a3eb93cf163a5514248-cfc7901acfd3b67f8d00.js
   Cache-Control: public, max-age=31536000, immutable
 /4412163296c2aaf42439f0fb892c472fb2834541-e04830042722bb8a5899.js
+  Cache-Control: public, max-age=31536000, immutable
+/24e8973f2e7da9b39b4589b5694336ec6db2c788-8ce4bc4730d208e9a285.js
   Cache-Control: public, max-age=31536000, immutable
 /8a3d079b772ace1690c205019c225ba09200463f-bc63907e96d3993db571.js
   Cache-Control: public, max-age=31536000, immutable
 /81a8d61a8497fdffcd2dbe58f2ca68da23897ddf-18be0a49d952f207272b.js
   Cache-Control: public, max-age=31536000, immutable
-/app-4f2b7fcae6fc41912996.js.map
+/app-bd111e667903bff4936a.js.map
   Cache-Control: public, max-age=31536000, immutable
-/webpack-runtime-274029dd46ee1e75f6d6.js.map
+/webpack-runtime-da9f94761d1bb8e8b40f.js.map
   Cache-Control: public, max-age=31536000, immutable
 /777-32ec8c166c2b1f300f15.js.map
   Cache-Control: public, max-age=31536000, immutable
@@ -283,12 +277,6 @@
   Cache-Control: public, max-age=31536000, immutable
 /component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-research-diretide-index-md-24850edb0fbe5895fa7c.js.map
   Cache-Control: public, max-age=31536000, immutable
-/component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-research-fxhsb-1-index-md-f87825a648fb50769e41.js.map
-  Cache-Control: public, max-age=31536000, immutable
-/component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-research-fxhsb-2-index-md-a7302aa71d9ed17d48a6.js.map
-  Cache-Control: public, max-age=31536000, immutable
-/component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-research-fxhsb-3-index-md-1a5a3c809911c0a902ee.js.map
-  Cache-Control: public, max-age=31536000, immutable
 /component---node-modules-gatsby-theme-academic-src-templates-tags-index-jsx-f252e15fc7d885fcc8f3.js.map
   Cache-Control: public, max-age=31536000, immutable
 /component---node-modules-gatsby-theme-academic-src-templates-tags-index-jsx-content-file-path-content-tags-gatsby-index-md-54b70f2b0231bc77b7db.js.map
@@ -311,15 +299,15 @@
   Cache-Control: public, max-age=31536000, immutable
 /0eb9e45f-fcabbabf95e780074d6f.js.map
   Cache-Control: public, max-age=31536000, immutable
-/5a24f48164172f2547a24d36e00378cbfb515677-142c683a8d7d363e5fe0.js.map
+/d70f3b46f1ed5c64c149e8c0bad7d5d17cd4b54e-c77a1800454e06e6511b.js.map
   Cache-Control: public, max-age=31536000, immutable
-/539f6d4c4b0735293909ab20f611759ddd4f645a-75b25551715b3900f2d9.js.map
+/791b6bc339ee4e1d48fd14795a61a2185a08c225-29cd16703abd3e1da452.js.map
   Cache-Control: public, max-age=31536000, immutable
-/40042b859e741802f1a1d617dffd8d060b6e2f91-9325192ac8a07e530ea5.js.map
-  Cache-Control: public, max-age=31536000, immutable
-/31d2d49400a3f08e45267fc2a287feb93fe0530c-f8adad4beab4bf0c7bcd.js.map
+/e84a75e0c96863ddd3ff0a3eb93cf163a5514248-cfc7901acfd3b67f8d00.js.map
   Cache-Control: public, max-age=31536000, immutable
 /4412163296c2aaf42439f0fb892c472fb2834541-e04830042722bb8a5899.js.map
+  Cache-Control: public, max-age=31536000, immutable
+/24e8973f2e7da9b39b4589b5694336ec6db2c788-8ce4bc4730d208e9a285.js.map
   Cache-Control: public, max-age=31536000, immutable
 /8a3d079b772ace1690c205019c225ba09200463f-bc63907e96d3993db571.js.map
   Cache-Control: public, max-age=31536000, immutable
