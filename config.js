@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: '',
   siteUrl: 'https://hibana2077.github.io',
   title: 'Syuan-Hao Li',
-  description: 'Personal Website of Syuan-Hao Li',
+  description: 'Academic Website of Syuan-Hao Li',
   author: 'Syuan-Hao Li',
   authorAlternative: 'Tom',
   introduction: [
