@@ -131,35 +131,17 @@ module.exports = {
           location: 'National Taitung University',
         }
       ],
-    }, {
-      title: 'Volunteer',
-      position: 'left',
-      data: [
-        {
-          date: 'Aug 2019',
-          title: '[fxh](https://github.com/Reapor-Yurnero) home visit third time',
-          location: 'Somewhere',
-        }, {
-          date: 'Aug 2018',
-          title: '[fxh](https://github.com/Reapor-Yurnero) home visit second time',
-          location: 'Somewhere',
-        }, {
-          date: 'Aug 2017',
-          title: '[fxh](https://github.com/Reapor-Yurnero) home visit\n\n111',
-          location: 'Somewhere',
-        },
-      ],
     },
   ],
-  awards: [
-    {
-      date: 'Someday',
-      title: 'Some Award',
-    }, {
-      date: 'Someday',
-      title: 'Another Award',
-    },
-  ],
+  // awards: [
+  //   {
+  //     date: 'Someday',
+  //     title: 'Some Award',
+  //   }, {
+  //     date: 'Someday',
+  //     title: 'Another Award',
+  //   },
+  // ],
   tagColors: [
     'magenta', 'red', 'volcano', 'orange', 'gold',
     'lime', 'green', 'cyan', 'blue', 'geekblue', 'purple',
