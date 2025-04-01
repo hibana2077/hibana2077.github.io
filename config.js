@@ -44,16 +44,16 @@ module.exports = {
   // facebook: 'https://www.facebook.com/rolwin.monteiro',
   // instagram: 'https://www.instagram.com/reevan100/',
   // rss: '/rss.xml',
-  wakatime: {
-    username: 'tcimba',
-    activity: '7add4047-08f9-4da8-b649-aa114503678f',
-    language: '460a84ab-722a-4b80-b896-cabaa13ad7eb',
-    editor: 'd851639a-28d8-4884-949f-d338a858f7e9',
-    os: 'caf7d0d1-8fd2-4595-a991-363c8583fea9',
-  },
-  contactFormUrl: process.env.CONTACT_FORM_ENDPOINT
-    || 'https://getform.io/f/09a3066f-c638-40db-ad59-05e4ed71e451',
-  googleAnalyticTrackingId: process.env.GA_TRACKING_ID || 'G-ZK3P43DY6M',
+  // wakatime: {
+  //   username: 'tcimba',
+  //   activity: '7add4047-08f9-4da8-b649-aa114503678f',
+  //   language: '460a84ab-722a-4b80-b896-cabaa13ad7eb',
+  //   editor: 'd851639a-28d8-4884-949f-d338a858f7e9',
+  //   os: 'caf7d0d1-8fd2-4595-a991-363c8583fea9',
+  // },
+  // contactFormUrl: process.env.CONTACT_FORM_ENDPOINT
+  //   || 'https://getform.io/f/09a3066f-c638-40db-ad59-05e4ed71e451',
+  // googleAnalyticTrackingId: process.env.GA_TRACKING_ID || 'G-ZK3P43DY6M',
   education: [
     {
       date: 'Jan 2020 - Present',
@@ -61,15 +61,15 @@ module.exports = {
       title: 'Ph.D in Computer Science',
       location: 'Some University, Somewhere',
     }, {
-      date: 'Sept 2015 - Aug 2019',
+      date: 'Sep 2021 - Jun 2025',
       icon: 'university',
-      title: 'B.S.E. in Electrical and Computer Engineering',
-      location: 'Some University, Somewhere',
+      title: 'B.Sc. in Computer Science and Information Engineering',
+      location: 'National Taitung University, Taitung, Taiwan',
     }, {
-      date: 'Sept 2008 - June 2015',
+      date: 'Sep 2019 - Jun 2021',
       icon: 'school',
-      title: 'Middle School',
-      location: 'Some Middle School, Somewhere',
+      title: 'High School',
+      location: 'National Hualien Senior High School, Hualien, Taiwan',
     }],
   interests: [
     {
