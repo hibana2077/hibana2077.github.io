@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: '/gatsby-theme-academic',
   siteUrl: 'https://tc-imba.github.io',
-  title: 'John Doe',
+  title: 'Syuan-Hao Li',
   description: 'Personal Website of John Doe',
   author: 'John Doe',
   authorAlternative: '豆浆',
