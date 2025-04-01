@@ -1,5 +1,5 @@
 module.exports = {
-	avatar: 'avatar.png',
+	avatar: 'https://avatars.githubusercontent.com/u/72302793?size=128',
 	pathPrefix: '',
 	tocMaxDepth: 2,
 	excerptMaxLength: 500,
@@ -55,7 +55,13 @@ module.exports = {
 		}, {
 			icon: 'brain',
 			title: 'Learning Theory',
-		}
+		}, {
+      title: 'Computer Vision',
+      icon: 'camera',
+    }, {
+      title: 'Natural Language Processing',
+      icon: 'language',
+    }
 	],
 	experience: [
 		{
