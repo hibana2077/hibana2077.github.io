@@ -28,7 +28,7 @@ module.exports = {
 	],
 	education: [
 		{
-			date: 'Sep. 2021 - May. 2025',
+			date: '\nSep. 2021 - May. 2025',
 			icon: 'university',
 			title: 'B.Sc. in Computer Science',
 			location: 'National Taitung University',
