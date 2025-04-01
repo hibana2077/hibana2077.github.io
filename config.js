@@ -47,34 +47,6 @@ module.exports = {
 		}
 	],
 	awards: [
-		{
-			date: 'Nov. 2024',
-			title: 'Graduate Conference Travel Award',
-		},
-		{
-			date: 'Oct. 2024',
-			title: 'NeurIPS 2024 Scholar Award',
-		},
-		{
-			date: 'Aug. 2024',
-			title: 'Excellent Internship Award at National Institute of Informatics',
-		},
-		{
-			date: 'Oct. 2021',
-			title: 'Hong Kong, Macao and Taiwan Overseas Chinese Student Scholarship',
-		},
-		{
-			date: 'Nov. 2020',
-			title: 'Undergraduate Excellent Scholarship',
-		},
-		{
-			date: 'June 2020',
-			title: 'Bao Gang Excellent Scholarship',
-		},
-		{
-			date: 'Dec. 2019',
-			title: 'Hong Kong, Macao and Taiwan Overseas Chinese Student Scholarship',
-		},
 	],
 	interests: [
 		{
