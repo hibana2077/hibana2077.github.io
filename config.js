@@ -16,7 +16,7 @@ module.exports = {
   excerptMaxLength: 500,
   birthday: 'Some day',
   location: 'Earth',
-  email: 'john.doe@gmail.com',
+  email: 'hibana2077@gmail.com',
   postsForArchivePage: 3,
   defaultLanguage: 'en',
   disqusScript: process.env.DISQUS_SCRIPT
