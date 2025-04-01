@@ -21,26 +21,10 @@ module.exports = {
 		research: 'research',
 	},
 	professions: [
-		'Be passionate',
-    'Be curious',
-    'Be creative',
+		'Uncertainty Quantification',
 	],
 	introduction: [
-		'I\'m a second-year Ph.D. student at [*University of Illinois Urbana-Champaign*](https://illinois.edu/) 🌽 advised by [Jiaqi Ma](https://jiaqima.github.io/). During my PhD, I\'ve had the immense delight of interning with [Mahito Sugiyama](https://mahito.info/index_e.html) at [*National Institute of Informatics*](https://www.nii.ac.jp/en/) 🇯🇵. Previously, I obtained my [dual Bachelor degree](https://www.ji.sjtu.edu.cn/academics/ipo/study-abroad/degree-programs/) from [*University of Michigan*](https://umich.edu/) 〽️ and [*Shanghai Jiao Tong University*](https://www.sjtu.edu.cn/) 🇨🇳.',
-		// 'My current research focus is on **trustworthy ML** and **data-centric AI**, with the goal being to draw theoretical insights from practical problems and develop algorithms with provable guarantees and desirable properties such as *efficiency*, *robustness*, and *fairness*. Previously I have worked on *graph neural networks* and *fast graph algorithms*. Generally speaking, I hold a strong interest in theoretical stuffs that involves *geometry*.',
-		// '\>My (crappy) research statement can be found [here](./research-statement.pdf/).',
-		// '### 🗞️ News',
-		// '* 🚀 Incoming intern @[*Amazon AWS AI Lab*](https://aws.amazon.com/ai/), come hanging out in New York 🗽 (*Mar. 7, 2025*)!',
-		// '* 🍻 One paper 📝 accepted by *ICLR 2025* (*Jan. 22, 2025*).',
-		// '* 🏆 Received the **Graduate Conference Travel Award** from UIUC (*Nov. 13, 2024*)!',
-		// '* 🏆 Received the **NeurIPS 2024 Scholar Award**, see you in Vancouver (*Oct. 11, 2024*)!',
-		// '* 🍻 Two papers 📝 accepted by *NeurIPS 2024* with one ***Spotlight*** (*Sep. 26, 2024*).',
-		// '* 📚 We launched the ongoing [*Data Attribution Reading Group*](https://trais-lab.github.io/dattri-reading-group/) (*June 23, 2024*).',
-		// '* 🚀 Interning @[*National Institute of Informatics*](https://www.nii.ac.jp/en/), come hanging out in Tokyo 🇯🇵 (*May 12, 2024*)!',
-		// // '* 📚 I initiated the ongoing *Statistical Learning Theory* Reading Group (*Jan. 12, 2024*).',
-		// '\>Only the latest news from the past year is listed. For more, please visit the [Experience](./experience/) and [Research](./research/).',
-		// '### 🔖 Misc',
-		// 'I\'m from Taiwan 🇹🇼! In my spare time, I enjoy [*street photography*](https://street.pbb.wtf/) 📷 and playing drums 🥁.',
+		'I am a B.Sc. student in Computer Science at National Taitung University, Taiwan.',
 	],
 	education: [
 		{
@@ -54,19 +38,13 @@ module.exports = {
 		{
 			url: '/cv.pdf',
 			icon: ['ai', 'cv'],
-		}, {
-			url: 'https://scholar.google.com/citations?user=lPlQpqoAAAAJ&hl=en',
-			icon: ['fa', 'graduation-cap'],
-		}, {
-			url: 'https://github.com/sleepymalc',
+		},{
+			url: 'https://github.com/hibana2077',
 			icon: ['fab', 'github'],
 		}, {
-			url: 'https://www.linkedin.com/in/ping-bang-hu-78a190215/',
+			url: 'https://www.linkedin.com/in/syuan-hao-li-92a860225/',
 			icon: ['fab', 'linkedin'],
-		}, {
-			url: 'https://X.com/PingbangHu',
-			icon: ['fab', 'twitter'],
-		},
+		}
 	],
 	awards: [
 		{
