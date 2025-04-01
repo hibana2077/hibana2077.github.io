@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://pbb.wtf/sitemap-index.xml
-Host: https://pbb.wtf
+Sitemap: https://hibana2077.com/sitemap-index.xml
+Host: https://hibana2077.com
