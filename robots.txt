@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://hibana2077.github.io/static/sitemap-index.xml
+Sitemap: https://hibana2077.github.io/sitemap-index.xml
 Host: https://hibana2077.github.io
