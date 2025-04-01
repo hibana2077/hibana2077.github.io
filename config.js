@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: 'https://avatars.githubusercontent.com/u/72302793?size=128',
+  pathPrefix: '',
   siteUrl: 'https://hibana2077.github.io',
   title: 'Syuan-Hao Li',
   description: 'Personal Website of Syuan-Hao Li',
@@ -8,19 +8,19 @@ module.exports = {
   introduction: [
     'I am a B.Sc. student in Computer Science at National Taitung University, Taiwan.'
   ],
-  avatar: '',
+  avatar: 'https://avatars.githubusercontent.com/u/72302793?size=128',
   professions: [
     'Computer Science Student',
   ],
   tocMaxDepth: 2,
   excerptMaxLength: 500,
-  birthday: 'Some day',
-  location: 'Earth',
+  birthday: 'March 10, 2003',
+  location: 'Taipei, Taiwan',
   email: 'hibana2077@gmail.com',
   postsForArchivePage: 3,
   defaultLanguage: 'en',
-  disqusScript: process.env.DISQUS_SCRIPT
-    || 'https://tc-imba.disqus.com/embed.js',
+  // disqusScript: process.env.DISQUS_SCRIPT
+  //   || 'https://tc-imba.disqus.com/embed.js',
   pages: {
     home: '/',
     posts: 'posts',
@@ -34,11 +34,8 @@ module.exports = {
       url: '/resume.pdf',
       icon: ['ai', 'cv'],
     }, {
-      url: 'https://github.com/',
+      url: 'https://github.com/hibana2077',
       icon: ['fab', 'github'],
-    }, {
-      url: 'https://twitter.com/',
-      icon: ['fab', 'twitter'],
     }, {
       url: 'https://scholar.google.com/',
       icon: ['fab', 'google-scholar'],
