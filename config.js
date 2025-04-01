@@ -8,7 +8,7 @@ module.exports = {
   introduction: [
     'I am a final year B.Sc. student in Computer Science at National Taitung University, Taiwan.'
   ],
-  avatar: 'https://avatars.githubusercontent.com/u/72302793?size=128',
+  avatar: './static/avatar.png',
   professions: [
     'Computer Science Student',
   ],
