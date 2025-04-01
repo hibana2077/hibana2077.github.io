@@ -28,7 +28,6 @@ module.exports = {
     resume: 'resume',
     tags: 'tags',
     research: 'research',
-    portfolio: 'portfolio', // new
   },
   social: [
     {
