@@ -65,11 +65,6 @@ module.exports = {
   // googleAnalyticTrackingId: process.env.GA_TRACKING_ID || 'G-ZK3P43DY6M',
   education: [
     {
-      date: 'Jan 2020 - Present',
-      icon: 'graduation-cap',
-      title: 'Ph.D in Computer Science',
-      location: 'Some University, Somewhere',
-    }, {
       date: 'Sep 2021 - Jun 2025',
       icon: 'university',
       title: 'B.Sc. in Computer Science and Information Engineering',
