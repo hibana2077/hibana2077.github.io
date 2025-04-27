@@ -1,0 +1,87 @@
+---
+title: "Sparse Bayesian Regression in High Dimensions: A Practical Exploration"
+tags: ["blog", "sparse-bayesian-regression", "high-dimensions"]
+date: 2025-04-01
+cover: "./preview.png"
+path: "posts/sparse-bayesian-regression"
+excerpt: A practical exploration of Sparse Bayesian Regression techniques in high dimensions.
+---
+
+# Sparse Bayesian Regression in High Dimensions: A Practical Exploration
+
+In this post, we explore how to apply `sklearn.BayesianRidge` to investigate sparsity and uncertainty in high-dimensional regression tasks.
+
+---
+
+## 1. Problem Statement
+
+Suppose we are given a set of high-dimensional feature vectors `a` (from a design matrix `X`) and we aim to perform regression analysis where we not only estimate the coefficients but also quantify their uncertainties (posterior variances). Additionally, we are interested in observing the sparsity characteristics of the model coefficients under different levels of regularization.
+
+---
+
+## 2. Synthetic Dataset Generation
+
+To rigorously analyze model behavior, we generate data as follows. Each element of the feature matrix $X$ is sampled from a standard normal distribution $X_{i,j} \sim \mathcal{N}(0,1)$. The true weight vector $w^*$ is constructed by randomly selecting $s$ nonzero elements and setting the rest to zero. The observation noise is sampled as $\varepsilon_i \sim \mathcal{N}(0, \sigma^2)$. Finally, the label vector $y$ is computed as $y = Xw^* + \varepsilon$.
+
+---
+
+## 3. Python Implementation
+
+```python
+import numpy as np
+from sklearn.linear_model import BayesianRidge
+
+def generate_synthetic_data(n, d, s, a=1.0, sigma=0.1, random_state=None):
+    rng = np.random.default_rng(random_state)
+    X = rng.standard_normal(size=(n, d))
+    support = rng.choice(d, size=s, replace=False)
+    w_true = np.zeros(d)
+    w_true[support] = rng.uniform(-a, a, size=s)
+    noise = rng.normal(0, sigma, size=n)
+    y = X.dot(w_true) + noise
+    return X, y, w_true
+
+n_samples, n_features, sparsity = 200, 1000, 20
+X, y, w_true = generate_synthetic_data(n=n_samples, d=n_features, s=sparsity, a=1.0, sigma=0.05, random_state=42)
+
+model = BayesianRidge(compute_score=True)
+model.fit(X, y)
+w_mean = model.coef_
+w_std = np.sqrt(model.sigma_)
+```
+
+---
+
+## 4. Analysis
+
+### 4.1 Threshold Sensitivity Analysis
+
+The relationship between different thresholds $\tau$, the number of estimated nonzero coefficients, precision, and recall is summarized below:
+
+| Threshold $\tau$ | Estimated Nonzero Count | Precision | Recall |
+|:---------------:|:------------------------:|:---------:|:------:|
+| $1.0\times10^{-2}$ | 782 | 0.023 | 0.900 |
+| $3.0\times10^{-2}$ | 404 | 0.042 | 0.850 |
+| $5.0\times10^{-2}$ | 177 | 0.085 | 0.750 |
+| $7.0\times10^{-2}$ | 66  | 0.197 | 0.650 |
+
+As the threshold increases, the precision improves while the recall declines. A higher precision but lower recall indicates that although fewer false positives occur, more true features are missed.
+
+### 4.2 Support Recovery Ability
+
+In the generated data, there are 20 true nonzero coefficients. When setting the threshold at $1\times10^{-2}$, the model estimates 782 nonzero coefficients. This result reflects a typical over-selection phenomenon: high recall but extremely low precision.
+
+### 4.3 Predictive Performance
+
+The model achieves a training $R^2$ score of 1.000 and a testing $R^2$ score of 0.227. The mean squared error (MSE) is 0.006, the mean absolute error (MAE) is 0.036, and the Pearson correlation between estimated and true coefficients is 0.472. Although the coefficient estimation error is noticeable, the model performs nearly perfectly on the training data. However, the significantly lower testing performance indicates a degree of overfitting.
+
+### 4.4 Effects of Sample Size and Noise
+
+When the sample-to-feature ratio $n/d$ increases (i.e., more samples relative to features), the number of false positives is expected to decrease. Additionally, increasing the observation noise enlarges the posterior variances, encouraging coefficients to shrink towards zero, thus enhancing sparsity. However, higher noise can also increase the risk of missing true nonzero features.
+
+---
+
+## 5. Conclusion
+
+Bayesian Ridge regression can effectively recover most important features, achieving high recall. However, it struggles to enforce sparsity naturally, leading to low precision. In high-dimensional sparse problems, although training fit is excellent, the generalization performance is limited, revealing a risk of overfitting. To improve sparsity or generalization ability, one should consider combining feature selection methods such as L1 projection or using models that enforce stronger sparsity priors like ARD (Automatic Relevance Determination). The choice of threshold and the conditions of the data, including sample size and noise level, critically influence the outcomes and should be carefully tuned according to specific application needs.
+
