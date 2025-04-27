@@ -31,7 +31,7 @@ module.exports = {
   },
   social: [
     {
-      url: '/resume.pdf',
+      url: '/cv.pdf',
       icon: ['ai', 'cv'],
     }, {
       url: 'https://github.com/hibana2077',
