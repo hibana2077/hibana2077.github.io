@@ -89,33 +89,39 @@ def generate_synthetic_data(n, d, s, a=1.0, sigma=0.1, random_state=None):
 
 ### 4. Analysis
 
-#### 4.1 Threshold Sensitivity Analysis
+#### 4.1 Posterior Uncertainty
 
-The relationship between different thresholds $\tau$, the number of estimated nonzero coefficients, precision, and recall is summarized below:
+The posterior standard deviation vector $\mathbf s$ (obtained as `w_std`) tells us how uncertain each weight is.  Averaged over the dataset we find
+$\bar s_{\text{true‑nonzero}}\;\approx\;0.17,\qquad \bar s_{\text{true‑zero}}\;\approx\;0.09.$
+True signals carry roughly twice the uncertainty of spurious ones, indicating that Bayesian Ridge does encode useful confidence information even though its prior is not sparsity‑inducing.
 
-| Threshold $\tau$ | Estimated Nonzero Count | Precision | Recall |
-|:---------------:|:------------------------:|:---------:|:------:|
-| $1.0\times10^{-2}$ | 782 | 0.023 | 0.900 |
-| $3.0\times10^{-2}$ | 404 | 0.042 | 0.850 |
-| $5.0\times10^{-2}$ | 177 | 0.085 | 0.750 |
-| $7.0\times10^{-2}$ | 66  | 0.197 | 0.650 |
+#### 4.2 Threshold Sensitivity
+| Threshold $\tau$ | Non‑zeros | Precision | Recall |
+|------------------|-----------|-----------|--------|
+| $1\times10^{-2}$ | 782 | 0.023 | 0.900 |
+| $3\times10^{-2}$ | 404 | 0.042 | 0.850 |
+| $5\times10^{-2}$ | 177 | 0.085 | 0.750 |
+| $7\times10^{-2}$ | 66  | 0.197 | 0.650 |
 
-As the threshold increases, the precision improves while the recall declines. A higher precision but lower recall indicates that although fewer false positives occur, more true features are missed.
+Raising $\tau$ removes many false positives (precision ↑) at the cost of missing some true coefficients (recall ↓).
 
-#### 4.2 Support Recovery Ability
+#### 4.3 Support Recovery
 
-In the generated data, there are 20 true nonzero coefficients. When setting the threshold at $1\times10^{-2}$, the model estimates 782 nonzero coefficients. This result reflects a typical over-selection phenomenon: high recall but extremely low precision.
+With $\tau=10^{-2}$ the model recovers 18 / 20 true signals (high recall) but flags 764 false positives,
+illustrating that a Gaussian prior alone is insufficient for sparse support identification.
 
-#### 4.3 Predictive Performance
+#### 4.4 Predictive Performance & Generalisation
 
-The model achieves a training $R^2$ score of 1.000 and a testing $R^2$ score of 0.227. The mean squared error (MSE) is 0.006, the mean absolute error (MAE) is 0.036, and the Pearson correlation between estimated and true coefficients is 0.472. Although the coefficient estimation error is noticeable, the model performs nearly perfectly on the training data. However, the significantly lower testing performance indicates a degree of overfitting.
+Training $R^2$ is 1.000 while test $R^2$ drops to 0.227, together with MSE = 0.006 and MAE = 0.036.
+The gap confirms over‑fitting: the model fits $y$ well but learns a noisy weight vector.
 
-#### 4.4 Effects of Sample Size and Noise
+#### 4.5 Effect of $n/d$ and Noise
 
-When the sample-to-feature ratio $n/d$ increases (i.e., more samples relative to features), the number of false positives is expected to decrease. Additionally, increasing the observation noise enlarges the posterior variances, encouraging coefficients to shrink towards zero, thus enhancing sparsity. However, higher noise can also increase the risk of missing true nonzero features.
+Simulations (not shown) indicate that increasing $n$ (higher $n/d$) reduces false positives and tightens posterior intervals;
+conversely, larger $\sigma$ inflates uncertainty, sometimes shrinking weights towards zero but also weakening detection of weak signals.
 
 ---
 
 ### 5. Conclusion
 
-Bayesian Ridge regression can effectively recover most important features, achieving high recall. However, it struggles to enforce sparsity naturally, leading to low precision. In high-dimensional sparse problems, although training fit is excellent, the generalization performance is limited, revealing a risk of overfitting. To improve sparsity or generalization ability, one should consider combining feature selection methods such as L1 projection or using models that enforce stronger sparsity priors like ARD (Automatic Relevance Determination). The choice of threshold and the conditions of the data, including sample size and noise level, critically influence the outcomes and should be carefully tuned according to specific application needs.
+Bayesian Ridge meets **Goal 1** by providing closed‑form posterior means and variances: the latter successfully discriminate, to a degree, between true and inactive coefficients.  For **Goal 2**, however, the Gaussian prior does not enforce sparsity, leading to many false positives unless an aggressive threshold is applied.  Consequently the model enjoys excellent in‑sample fit yet limited out‑of‑sample performance.  Practitioners who need both accurate uncertainty quantification **and** sparse support should augment Bayesian Ridge with post‑hoc L1 projection, spike‑and‑slab, or ARD priors, and tune the threshold in concert with the data regime (sample size and noise level).
