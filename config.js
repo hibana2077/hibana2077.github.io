@@ -76,22 +76,23 @@ module.exports = {
       location: 'National Hualien Senior High School, Hualien, Taiwan',
     }],
   interests: [
-    {
-      title: 'Medical Image Processing',
-      icon: 'stethoscope',
-    }, {
-      icon: 'layer-group',
-      title: 'Full Stack Development',
-    }, {
-      icon: ['fab', 'linux'],
-      title: 'Open Source Community',
-    }, {
-			icon: 'chart-line',
-			title: 'Mathematical Statistics',
-		}, {
-			icon: 'brain',
-			title: 'Learning Theory',
-		}],
+  {
+    title: 'Tensor Decompositions',
+    icon: 'cube', // 可替換為 'cubes' 或 'th-large' 視風格
+  }, {
+    title: 'Representation Learning',
+    icon: 'project-diagram', // 或 'shapes'、'puzzle-piece'
+  }, {
+    title: 'Multi-modality Learning',
+    icon: 'object-group', // 表示多個組件、模態
+  }, {
+    title: 'Ultra-fine-grained Visual Categorization',
+    icon: 'eye', // 或使用 'search-plus' 強調精細辨識
+  }, {
+    title: 'Neural Network Optimization',
+    icon: 'brain', // 表示神經網絡與優化
+  }
+  ],
   experience: [
     {
       title: 'Work Experience',
