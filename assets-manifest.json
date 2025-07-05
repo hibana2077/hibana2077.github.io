@@ -42,9 +42,9 @@
   "855-3bf0f369301e19d2b6d9.js.map": "855-3bf0f369301e19d2b6d9.js.map",
   "8a3d079b772ace1690c205019c225ba09200463f-afc4268a9c82c29b7508.js.map": "8a3d079b772ace1690c205019c225ba09200463f-afc4268a9c82c29b7508.js.map",
   "8a3d079b772ace1690c205019c225ba09200463f.js": "8a3d079b772ace1690c205019c225ba09200463f-afc4268a9c82c29b7508.js",
-  "app-740cbc4f4324280f7fde.js.LICENSE.txt": "app-740cbc4f4324280f7fde.js.LICENSE.txt",
-  "app-740cbc4f4324280f7fde.js.map": "app-740cbc4f4324280f7fde.js.map",
-  "app.js": "app-740cbc4f4324280f7fde.js",
+  "app-0408cf6213401db90a86.js.LICENSE.txt": "app-0408cf6213401db90a86.js.LICENSE.txt",
+  "app-0408cf6213401db90a86.js.map": "app-0408cf6213401db90a86.js.map",
+  "app.js": "app-0408cf6213401db90a86.js",
   "c8908021424e42512cf74c6037ddc2cf66398d95-aa31c394fb6a154f5564.js.map": "c8908021424e42512cf74c6037ddc2cf66398d95-aa31c394fb6a154f5564.js.map",
   "c8908021424e42512cf74c6037ddc2cf66398d95.js": "c8908021424e42512cf74c6037ddc2cf66398d95-aa31c394fb6a154f5564.js",
   "component---cache-caches-gatsby-plugin-offline-app-shell-js-6416192067dc0d95720d.js.map": "component---cache-caches-gatsby-plugin-offline-app-shell-js-6416192067dc0d95720d.js.map",
@@ -69,8 +69,8 @@
   "component---node-modules-gatsby-theme-academic-src-pages-wakatime-index-jsx.js": "component---node-modules-gatsby-theme-academic-src-pages-wakatime-index-jsx-5bbe4dcd931c886f854a.js",
   "component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-posts-2020-10-02-hello-world-index-mdx-152262b0a36cfafc2082.js.map": "component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-posts-2020-10-02-hello-world-index-mdx-152262b0a36cfafc2082.js.map",
   "component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-posts-2020-10-02-hello-world-index-mdx.js": "component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-posts-2020-10-02-hello-world-index-mdx-152262b0a36cfafc2082.js",
-  "component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-posts-gadi-usage-index-mdx-c378474f83089df8d1ba.js.map": "component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-posts-gadi-usage-index-mdx-c378474f83089df8d1ba.js.map",
-  "component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-posts-gadi-usage-index-mdx.js": "component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-posts-gadi-usage-index-mdx-c378474f83089df8d1ba.js",
+  "component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-posts-gadi-usage-index-mdx-6edfc239baf5bcb9f1c5.js.map": "component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-posts-gadi-usage-index-mdx-6edfc239baf5bcb9f1c5.js.map",
+  "component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-posts-gadi-usage-index-mdx.js": "component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-posts-gadi-usage-index-mdx-6edfc239baf5bcb9f1c5.js",
   "component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-posts-grad-compass-index-mdx-0ef89f60121ca9477751.js.map": "component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-posts-grad-compass-index-mdx-0ef89f60121ca9477751.js.map",
   "component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-posts-grad-compass-index-mdx.js": "component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-posts-grad-compass-index-mdx-0ef89f60121ca9477751.js",
   "component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-posts-sparse-bayesian-regression-in-high-dimensions-index-mdx-7e53a908b1784deff232.js.map": "component---node-modules-gatsby-theme-academic-src-templates-post-post-jsx-content-file-path-content-posts-sparse-bayesian-regression-in-high-dimensions-index-mdx-7e53a908b1784deff232.js.map",
@@ -153,6 +153,6 @@
   "static/academicons.ttf": "static/academicons-4f700bbf66a5f360ce3531ea15ac42ed.ttf",
   "static/academicons.woff": "static/academicons-c8b8bfc0fed1197073165a52e48fdf3c.woff",
   "styles.css": "styles.44a6c131a5bb10738252.css",
-  "webpack-runtime-18b28a6cb1c90b6a598c.js.map": "webpack-runtime-18b28a6cb1c90b6a598c.js.map",
-  "webpack-runtime.js": "webpack-runtime-18b28a6cb1c90b6a598c.js"
+  "webpack-runtime-2046f1aa935eb88ad387.js.map": "webpack-runtime-2046f1aa935eb88ad387.js.map",
+  "webpack-runtime.js": "webpack-runtime-2046f1aa935eb88ad387.js"
 }
